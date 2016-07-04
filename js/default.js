@@ -6,7 +6,6 @@ for(idx in thmubs){
 }
 
 function getFileName() {
-    // ホスト以下のパスを取得し、それをsplit('/')で「/」区切りで配列に入れ、pop()で配列の最後の値を取得
     return window.location.href.split('/').pop();
 }
 
@@ -45,11 +44,11 @@ var update = function(){
       counter[2] + '時間' + 
       counter[1] + '分' + 
       counter[0] + '秒';
-    refresh();// タイマーを起動
+    refresh();
   }
 }
 
 var refresh= function(){
-  setTimeout(update, 1000);//1000ミリ秒待ってからupdateを実行
+  setTimeout(update, 1000);
 }
-update();// 最初の更新
+update();
